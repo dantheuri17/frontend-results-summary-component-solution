@@ -7,7 +7,7 @@ function App() {
 	return (
 		<>
 			<div className="grid items-center w-screen h-screen bg-pale-blue justify-items-center">
-				<div className="grid w-[700px] h-[500px] grid-cols-2 bg-white">
+				<div className="grid w-[700px] h-[475px] grid-cols-2 bg-white rounded-r-3xl">
 					<div className="flex-col h-full px-16 text-white bg-gradient-to-b from-electric-violet to-cobalt-blue rounded-3xl">
 						<div className="text-center py-7 font-hankengrotesk-medium text-[18px]">
 							<p>Your Result</p>
@@ -43,7 +43,7 @@ function App() {
 							</span>
 
 							<span className="flex gap-1">
-								<p className="font-hankengrotesk-bold">80</p> /
+								<p className="font-hankengrotesk-bold">80</p>/
 								<p className="font-hankengrotesk-medium">100</p>
 							</span>
 						</div>
@@ -56,7 +56,7 @@ function App() {
 							</span>
 
 							<span className="flex gap-1">
-								<p className="font-hankengrotesk-bold">92</p> /
+								<p className="font-hankengrotesk-bold">92</p>/
 								<p className="font-hankengrotesk-medium">100</p>
 							</span>
 						</div>
