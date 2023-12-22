@@ -1,43 +1,82 @@
+import iconReaction from './assets/images/icon-reaction.svg';
+import iconMemory from './assets/images/icon-memory.svg';
+import iconVerbal from './assets/images/icon-verbal.svg';
+import iconVisual from './assets/images/icon-visual.svg';
 
 function App() {
 	return (
 		<>
-			<div className="h-screen w-screen grid justify-items-center items-center">
-				<div className="grid grid-cols-2 w-3/4 h-[400px]">
-					<div className="bg-light-royal-blue flex-col text-white">
-						<div className="text-center py-8">
+			<div className="grid items-center w-screen h-screen bg-pale-blue justify-items-center">
+				<div className="grid w-[700px] h-[450px] grid-cols-2 bg-white">
+					<div className="flex-col h-full px-16 text-white bg-gradient-to-b from-electric-violet to-cobalt-blue rounded-3xl">
+						<div className="text-center py-7">
 							<p>Your Result</p>
 						</div>
-						<div className="flex justify-center">
-							<div className="bg-red-400 aspect-square w-60 rounded-full flex-col">
-								<h1 className="text-center">76</h1>
-								<p className="text-center">of 100</p>
+						<div className="flex justify-center px-3">
+							<div className="flex items-center justify-center w-full bg-gradient-to-b from-violet-blue to-persian-blue rounded-full aspect-square">
+								<div>
+									<h1 className="text-center text-7xl font-hankengrotesk-extra-bold">
+										76
+									</h1>
+									<p className="text-center">of 100</p>
+								</div>
 							</div>
 						</div>
-						<div>
-							<h3 className="text-center text-2xl">Great</h3>
-							<p>
+						<div className="w-full mt-5">
+							<h3 className="text-2xl text-center font-hankengrotesk-bold">
+								Great
+							</h3>
+							<p className="w-full text-center font-hankengrotesk-medium">
 								You scored higher than 65% of the people who have taken these
 								tests.
 							</p>
 						</div>
 					</div>
-					<div>
-						<p>Summary</p>
-						<div>
-							<p>Reaction 80 / 100</p>
+					<div className="px-10 py-7">
+						<p className="text-lg font-hankengrotesk-bold">Summary</p>
+						<div className="flex justify-between py-2 my-6 bg-light-red">
+							<span className="flex gap-3">
+								<img src={iconReaction} />
+								<p className="font-hankengrotesk-bold text-score-red">
+									Reaction
+								</p>{" "}
+							</span>
+
+							<p>80 / 100</p>
 						</div>
-						<div>
-							<p>Memory 92 / 100</p>
+						<div className="flex justify-between py-2 my-6 bg-light-orangey-yellow">
+							<span className="flex gap-3">
+								<img src={iconMemory} alt="" />
+								<p className="font-hankengrotesk-bold text-orangey-yellow">
+									Memory
+								</p>
+							</span>
+
+							<p>92 / 100</p>
 						</div>
-						<div>
-							<p>Verbal 61 / 100</p>
+						<div className="flex justify-between py-2 my-6 bg-light-green-teal">
+							<span className="flex gap-3">
+								<img src={iconVerbal} alt="" />
+								<p className="font-hankengrotesk-bold text-green-teal">
+									Verbal
+								</p>
+							</span>
+
+							<p>61 / 100</p>
 						</div>
-						<div>
-							<p>Visual 72 / 100</p>
+						<div className="flex justify-between py-2 my-6 bg-light-lavender">
+							<span className="flex gap-3">
+								<img src={iconVisual} alt="" />
+								<p className="font-hankengrotesk-bold text-score-lavender">
+									Visual
+								</p>
+							</span>
+							<p>72 / 100</p>
 						</div>
 
-						<button>Continue</button>
+						<button className="w-full py-4 text-white rounded-full bg-dark-gray-blue">
+							Continue
+						</button>
 					</div>
 				</div>
 			</div>

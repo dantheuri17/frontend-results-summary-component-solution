@@ -4,16 +4,30 @@ export default {
 	theme: {
 		extend: {
 			colors: {
+				/*score-background-colors */
 				"light-red": "var(--light-red)",
+				"light-orangey-yellow": "var(--light-orangey-yellow)",
+				"light-green-teal": "var(--light-green-teal)",
+				"light-lavender": "var(--light-lavender)",
+
+				"cobalt-blue": "var(--cobalt-blue)",
+
+				/*score-text-color*/
+				"score-red": "var(--score-red)",
 				"orangey-yellow": "var(--orangey-yellow)",
 				"green-teal": "var(--green-teal)",
+				"score-lavender": "var(--score-lavender)",
+
 				"light-slate-blue": "var(--light-slate-blue)",
-				"light-royal-blue": "var(--light-royal-blue)",
+				"royal-blue": "var(--royal-blue)",
 				"violet-blue": "var(--violet-blue)",
+
+
 				"persian-blue": "var(--persian-blue)",
 				"pale-blue": "var(--pale-blue)",
-				"light-lavender": "var(--light-lavender)",
 				"dark-gray-blue": "var(--dark-gray-blue)",
+
+				"electric-violet": "var(--electric-violet)"
 			},
 		},
 	},
