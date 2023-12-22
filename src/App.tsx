@@ -13,7 +13,7 @@ function App() {
 							<p>Your Result</p>
 						</div>
 						<div className="flex justify-center px-3">
-							<div className="flex items-center justify-center w-full bg-gradient-to-b from-violet-blue to-persian-blue rounded-full aspect-square">
+							<div className="flex items-center justify-center w-full rounded-full bg-gradient-to-b from-violet-blue to-persian-blue aspect-square">
 								<div>
 									<h1 className="text-center text-7xl font-hankengrotesk-extra-bold">
 										76
@@ -39,10 +39,13 @@ function App() {
 								<img src={iconReaction} />
 								<p className="font-hankengrotesk-bold text-score-red">
 									Reaction
-								</p>{" "}
+								</p>
 							</span>
 
-							<p>80 / 100</p>
+							<span className="flex gap-1">
+								<p className="font-hankengrotesk-bold">80</p> /
+								<p className="font-hankengrotesk-medium">100</p>
+							</span>
 						</div>
 						<div className="flex justify-between py-2 my-6 bg-light-orangey-yellow">
 							<span className="flex gap-3">
@@ -52,7 +55,10 @@ function App() {
 								</p>
 							</span>
 
-							<p>92 / 100</p>
+							<span className="flex gap-1">
+								<p className="font-hankengrotesk-bold">92</p> /
+								<p className="font-hankengrotesk-medium">100</p>
+							</span>
 						</div>
 						<div className="flex justify-between py-2 my-6 bg-light-green-teal">
 							<span className="flex gap-3">
@@ -62,7 +68,10 @@ function App() {
 								</p>
 							</span>
 
-							<p>61 / 100</p>
+							<span className="flex gap-1">
+								<p className="font-hankengrotesk-bold">61</p> /
+								<p className="font-hankengrotesk-medium">100</p>
+							</span>
 						</div>
 						<div className="flex justify-between py-2 my-6 bg-light-lavender">
 							<span className="flex gap-3">
@@ -71,7 +80,10 @@ function App() {
 									Visual
 								</p>
 							</span>
-							<p>72 / 100</p>
+							<span className="flex gap-1">
+								<p className="font-hankengrotesk-bold">72</p> /
+								<p className="font-hankengrotesk-medium"> 100</p>
+							</span>
 						</div>
 
 						<button className="w-full py-4 text-white rounded-full bg-dark-gray-blue">
