@@ -7,9 +7,9 @@ function App() {
 	return (
 		<>
 			<div className="grid items-center w-screen h-screen bg-pale-blue justify-items-center">
-				<div className="grid w-[700px] h-[450px] grid-cols-2 bg-white">
+				<div className="grid w-[700px] h-[500px] grid-cols-2 bg-white">
 					<div className="flex-col h-full px-16 text-white bg-gradient-to-b from-electric-violet to-cobalt-blue rounded-3xl">
-						<div className="text-center py-7">
+						<div className="text-center py-7 font-hankengrotesk-medium text-[18px]">
 							<p>Your Result</p>
 						</div>
 						<div className="flex justify-center px-3">
@@ -22,19 +22,19 @@ function App() {
 								</div>
 							</div>
 						</div>
-						<div className="w-full mt-5">
+						<div className="w-full mt-6">
 							<h3 className="text-2xl text-center font-hankengrotesk-bold">
 								Great
 							</h3>
-							<p className="w-full text-center font-hankengrotesk-medium">
+							<p className="w-full mt-5 text-center font-hankengrotesk-medium">
 								You scored higher than 65% of the people who have taken these
 								tests.
 							</p>
 						</div>
 					</div>
-					<div className="px-10 py-7">
+					<div className="px-8 py-7">
 						<p className="text-lg font-hankengrotesk-bold">Summary</p>
-						<div className="flex justify-between py-2 my-6 bg-light-red">
+						<div className="flex justify-between py-3 px-2 my-6 bg-light-red">
 							<span className="flex gap-3">
 								<img src={iconReaction} />
 								<p className="font-hankengrotesk-bold text-score-red">
@@ -47,7 +47,7 @@ function App() {
 								<p className="font-hankengrotesk-medium">100</p>
 							</span>
 						</div>
-						<div className="flex justify-between py-2 my-6 bg-light-orangey-yellow">
+						<div className="flex justify-between py-3 px-2 my-6 bg-light-orangey-yellow">
 							<span className="flex gap-3">
 								<img src={iconMemory} alt="" />
 								<p className="font-hankengrotesk-bold text-orangey-yellow">
@@ -60,7 +60,7 @@ function App() {
 								<p className="font-hankengrotesk-medium">100</p>
 							</span>
 						</div>
-						<div className="flex justify-between py-2 my-6 bg-light-green-teal">
+						<div className="flex justify-between py-3 px-2 my-6 bg-light-green-teal">
 							<span className="flex gap-3">
 								<img src={iconVerbal} alt="" />
 								<p className="font-hankengrotesk-bold text-green-teal">
@@ -73,7 +73,7 @@ function App() {
 								<p className="font-hankengrotesk-medium">100</p>
 							</span>
 						</div>
-						<div className="flex justify-between py-2 my-6 bg-light-lavender">
+						<div className="flex justify-between py-3 px-2 my-6 bg-light-lavender">
 							<span className="flex gap-3">
 								<img src={iconVisual} alt="" />
 								<p className="font-hankengrotesk-bold text-score-lavender">
@@ -86,13 +86,12 @@ function App() {
 							</span>
 						</div>
 
-						<button className="w-full py-4 text-white rounded-full bg-dark-gray-blue">
+						<button className="w-full mt-2 py-4 text-white rounded-full bg-dark-gray-blue">
 							Continue
 						</button>
 					</div>
 				</div>
 			</div>
-
 		</>
 	);
 }
